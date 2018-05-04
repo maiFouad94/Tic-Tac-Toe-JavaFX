@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HighScoresController">
+   <children>
+      <Button fx:id="ReplayGame" layoutX="223.0" layoutY="417.0" mnemonicParsing="false" onAction="#showUpReplay" prefHeight="25.0" prefWidth="142.0" text="Replay Game" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="235.0" AnchorPane.topAnchor="417.0" />
+      <ImageView fitHeight="57.0" fitWidth="236.0" layoutX="225.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="372.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="224.07041931152344" AnchorPane.topAnchor="51.0">
+         <image>
+            <Image url="@../highscore-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="244.0" layoutY="9.0" prefHeight="31.0" prefWidth="114.0" text="      Score" AnchorPane.bottomAnchor="440.0" AnchorPane.leftAnchor="244.0" AnchorPane.rightAnchor="242.0" AnchorPane.topAnchor="9.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backIcon" fitHeight="42.0" fitWidth="59.0" layoutX="22.0" layoutY="24.0" onMouseClicked="#backHandle" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="scoreLabel" layoutX="294.0" layoutY="235.0" prefHeight="42.0" prefWidth="114.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="240.0" text="Your score">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

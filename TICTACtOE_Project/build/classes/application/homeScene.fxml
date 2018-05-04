@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeSceneController">
+   <children>
+      <VBox alignment="CENTER" focusTraversable="true" layoutX="-6.0" layoutY="-2.0" prefHeight="407.0" prefWidth="619.0" spacing="16.0" style="-fx-background-color: #eee;" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-13.0" AnchorPane.topAnchor="-2.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logo.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="singlePlayer" onMouseClicked="#singlePlayerHandle" style="-fx-hover: curser;" text="SINGLE PLAYER" textAlignment="CENTER" textFill="#10a2e0">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="multiPlayer" onMouseClicked="#multiPlayerHandle" style="-fx-hover: curser;" text="MULTI-PLAYER" textAlignment="CENTER" textFill="#10a2e0">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label onMouseClicked="#throughNetHandle" style="-fx-hover: curser;" text="Through Network" textAlignment="CENTER" textFill="#10a2e0">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label onMouseClicked="#recentScoreHandle" style="-fx-hover: curser;" text="RECENT SCORES" textAlignment="CENTER" textFill="#10a2e0">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label onMouseClicked="#aboutHandle" style="-fx-hover: curser;" text="ABOUT" textAlignment="CENTER" textFill="#10a2e0">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label onMouseClicked="#quitHandle" style="-fx-hover: curser;" text="QUIT" textAlignment="CENTER" textFill="#10a2e0">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
